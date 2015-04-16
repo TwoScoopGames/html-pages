@@ -15,21 +15,25 @@
 		float: left;
 	}
 
-	@media (min-width: 1025px) {
+	@media (min-width: 861px) {
 		.tweet {
-			height: 130px;
-			width: 48%;
+			height: 174px;
+			width: 47%;
 			padding: 10px 20px 0 20px;
 			margin: 15px 15px 0 0;
 		}
 	}
 
-	@media (min-width: 0px) and (max-width: 1024px) {
+	@media (min-width: 0px) and (max-width: 860px) {
 		.tweet {
 			width: 100%;
-			padding: 20px;
+			padding:  2px 20px 10px 20px;
 			margin: 5px 0 5px 0;
 		}
+	}
+
+	.tweet a{
+		color: white;
 	}
 
 	.tweet h3{
@@ -37,10 +41,11 @@
 		margin: 0;
 		display: inline-block;
 	}
+
 	.tweet .twitter{
-		color: white;
 		display: inline-block;
 	}
+
 	.tweet .quote{
 		padding: 0;
 		margin: 0;
@@ -50,6 +55,32 @@
 		font-family: georgia;
 	}
 </style>
+
+<div class="tweet">
+	<h3 class="name">Miko</h3>
+	<a class="twitter" href="https://twitter.com/@PrincessMikomi" target="_blank" >@PrincessMikomi</a>
+	<p class="quote">
+		-go with whatever graphics you make first
+		<br>-finish all/most assets Friday
+		<br>-write down everything while brainstorming
+	</p>
+</div>
+
+<div class="tweet">
+	<h3 class="name">Anthony quisenberry</h3>
+	<a class="twitter" href="https://twitter.com/@aqquisenberry" target="_blank" >@aqquisenberry</a>
+	<p class="quote">
+		only #gamejamtip I can think of that isn't intuitive is to know the kind of game you want to make going in.
+	</p>
+</div>
+
+<div class="tweet">
+	<h3 class="name">Papy Pilgrim </h3>
+	<a class="twitter" href="https://twitter.com/@PapyPilgrim" target="_blank" >@PapyPilgrim</a>
+	<p class="quote">
+		Make something enjoyable, not a half-baked version of "that big idea" you have in the back of your mind.
+	</p>
+</div>
 
 <div class="tweet">
 	<h3 class="name">Christer Kaitila </h3>
@@ -370,7 +401,7 @@
 </div>
 
 <script>
-	var colors =["#BA1D49 ","#F47726 ","#524840 ","#13AFCE "];
+	var colors =["#fac164","#3a9fc8 ","#2d7998", "#f95d65"];
 
 	function randColor(colors){
 		var cpuPick = Math.floor(Math.random()*colors.length);
