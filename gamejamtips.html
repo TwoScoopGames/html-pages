@@ -56,6 +56,11 @@
 	}
 </style>
 
+<p>
+	<span class="tipCount"></span>
+	<br> Submit your own by mentioning @TwoScoopGames using the hashtag #GameJamTips!
+</p>
+
 <div class="tweet">
 	<h3 class="name">Miko</h3>
 	<a class="twitter" href="https://twitter.com/@PrincessMikomi" target="_blank" >@PrincessMikomi</a>
@@ -412,9 +417,16 @@
 		element.style.background = color;
 	}
 
-	var pageDivs = document.getElementsByClassName("tweet");
-	for(i = 0; i < pageDivs.length; i++){
-		changeBGColor(pageDivs[i], randColor(colors));
+	function changeBGColorMultiple(className, colors){
+		var pageDivs = document.getElementsByClassName(className);
+		for(i = 0; i < pageDivs.length; i++){
+			changeBGColor(pageDivs[i], randColor(colors));
+		}
 	}
+	
+	changeBGColorMultiple("tweet", colors);
+
+	document.getElementsByClassName("tipCount")[0].innerHTML =  document.getElementsByClassName("tweet").length + " tips!";
+
 
 </script>
